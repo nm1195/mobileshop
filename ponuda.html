@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Nikola Milicevic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+
+    <script src="scripts/js/jquery-2.11.min.js"></script>
+    <script src="scripts/js/jquery.flexslider-min.js"></script>
+    <script src="scripts/js/lightbox.js"></script>
+    <script src="scripts/js/bootstrap.js"></script>
+    <script src="scripts/js/main.js"></script>
+
+</head>
+<body class="ponuda">
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-right">
+                <ul class="navigacija">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ponuda.html">Ponuda</a></li>
+                    <li><a href="o-nama.html">O nama</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="slika">
+        <img src="./img/top-slika.jpg" alt="">
+    </div>
+    <div class="ponuda">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="big-item">
+                        <img src="./img/asus.png" alt="">
+                        <div class="info-wrapper">
+                            <h3>Asus zenfone 3 max</h3>
+                            <p>IPS/5.2 inča/Android/1.2 GHz</p>
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#upit">
+                                Posalji Upit
+                            </button>
+                        </div>
+                    </div>
+                    <div id="upit" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title"></h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form name="info_form" class="form-inline" method="post">
+                                        <div class="form-group col-sm-12">
+                                            <input type="text" class="form-control" name="name" id="name"
+                                                   placeholder="Unesi Ime" required="">
+                                        </div>
+                                        <div class="form-group col-sm-12">
+                                            <input type="email" class="form-control" name="email" id="email"
+                                                   placeholder="Unesi Email">
+                                        </div>
+                                        <div class="form-group col-sm-12">
+                                            <input type="text" class="form-control" name="phone" id="phone"
+                                                   placeholder="Unesi kontakt telefon" minlength="6">
+                                        </div>
+
+                                        <div class="form-group col-sm-12">
+                                            <textarea class="form-control" id="msg" name="msg" rows="4"
+                                              placeholder="Unesi poruku ( maximum 150 karaktera) " required
+                                              maxlength="150">
+                                            </textarea>
+                                        </div>
+                                        <div class="form-group col-sm-12">
+                                            <button type="submit" class="btn btn-default fa-pull-left">
+                                                Posalji
+                                            </button>
+                                            <input type="radio" name="gender" value="male" checked> Musko<br>
+                                            <input type="radio" name="gender" value="female"> Zensko<br>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                            <label class="form-check-label" for="exampleCheck1">Slazem se sa uslovima</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img src="./img/note9.jpg" alt="">
+                        <h3>Samsung Galaxy Note 9</h3>
+                        <p>Quad HD Super Amoled, Dual edge/6.4 inča/12 MP/ Dvostruka kamera sa Dual OIS/Android</p>
+                        <a class="btn btn-info" data-toggle="modal" data-target="#upit" href="#">Posalji Upit</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img src="./img/note9.jpg" alt="">
+                        <h3>Samsung Galaxy Note 9</h3>
+                        <p>Quad HD Super Amoled, Dual edge/6.4 inča/12 MP/ Dvostruka kamera sa Dual OIS/Android</p>
+                        <a class="btn btn-info" data-toggle="modal" data-target="#upit" href="#">Posalji Upit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img src="./img/note9.jpg" alt="">
+                        <h3>Samsung Galaxy Note 9</h3>
+                        <p>Quad HD Super Amoled, Dual edge/6.4 inča/12 MP/ Dvostruka kamera sa Dual OIS/Android</p>
+                        <a class="btn btn-info" data-toggle="modal" data-target="#upit" href="#">Posalji Upit</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img src="./img/p20.jpg" alt="">
+                        <h3>Huawei P20 pro</h3>
+                        <p>5.8 inča/Dual camera 12 MP + 20 MP/Android/8.1</p>
+                        <a class="btn btn-info" data-toggle="modal" data-target="#upit" href="#">Posalji Upit</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img src="./img/j6.jpg" alt="">
+                        <h3>Samsung Galaxy J6</h3>
+                        <p>Super AMOLED/5.6 inča/13 MP/Android</p>
+                        <a class="btn btn-info" data-toggle="modal" data-target="#upit" href="#">Posalji Upit</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img src="./img/j6.jpg" alt="">
+                        <h3>Samsung Galaxy J6</h3>
+                        <p>Super AMOLED/5.6 inča/13 MP/Android</p>
+                        <a class="btn btn-info" data-toggle="modal" data-target="#upit" href="#">Posalji Upit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <button class="btn btn-info" onclick="document.getElementById('date').innerHTML=Date()">Pogledajte
+                    trenutno vreme
+                </button>
+                <p id="date"></p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
